@@ -23,7 +23,7 @@ const projects = [
     descRu: 'Интерактивный сайт музея с бронированием билетов, интерактивной картой и GSAP-анимациями.',
     descEn: 'Interactive museum site with ticket booking, interactive map and GSAP animations.',
     tags: ['React', 'Vite', 'Tailwind', 'GSAP'],
-    demo: '#',
+    demo: 'https://remarkable-sherbet-2e5db0.netlify.app/',
     github: '#',
     gradient: 'from-blue-400 to-indigo-500',
     emoji: '🏛️',
@@ -35,7 +35,7 @@ const projects = [
     descRu: 'Полностью адаптивный макет Додо Пицца с корзиной покупок и формой доставки.',
     descEn: 'Fully responsive Dodo Pizza layout with shopping cart and delivery form.',
     tags: ['HTML5', 'CSS3', 'JavaScript'],
-    demo: '#',
+    demo: 'https://dulcet-salamander-08c010.netlify.app/',
     github: '#',
     gradient: 'from-orange-400 to-red-500',
     emoji: '🍕',
@@ -75,6 +75,8 @@ function ProjectCard({ project, lang, t }) {
         <div className="flex gap-3">
           <a
             href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors"
           >
             <ExternalLink size={15} />
